@@ -9,13 +9,7 @@ The app contains 3 applications and a library:
 
 ## Instructions to reproduce the issue
 
-First install the dependencies with PNPM:
-
-```bash
-pnpm install
-```
-
-Then, start the solution by executing the following command at the root of the workspace:
+I cannot reproduce the issue :(
 
 
 
