@@ -1,0 +1,31 @@
+{
+    "name": "my-lib",
+    "version": "1.0.0",
+    "description": "My lib",
+    "publishConfig": {
+      "access": "public"
+    },
+    "type": "module",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "default": "./dist/index.js"
+        }
+    },
+    "scripts": {
+        "dev": "tsup --config ./tsup.dev.ts",
+        "build": "tsup --config ./tsup.build.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@module-federation/runtime": "0.1.10"
+    },
+    "devDependencies": {
+        "tsup": "8.0.2",
+        "typescript": "5.4.5"
+    }
+  }
+  
