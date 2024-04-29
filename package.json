@@ -8,11 +8,16 @@
     "dev": "pnpm -r --parallel dev",
     "build": "cd packages/my-lib && pnpm build",
     "build-my-lib": "cd packages/my-lib && pnpm build",
+    "knip": "knip",
     "reset": "pnpm run \"/^reset:.*/\"",
     "reset:node-modules": "pnpm -r --include-workspace-root --parallel exec pnpm dlx rimraf node_modules",
     "reset:lock-file": "pnpm dlx rimraf pnpm-lock.yaml",
     "list-outdated-deps": "pnpm outdated -r --format list !eslint",
     "update-outdated-deps": "pnpm update -r --latest !eslint"
+  },
+  "devDependencies": {
+    "@types/node": "20.12.7",
+    "knip": "5.11.0"
   },
   "keywords": [],
   "license": "ISC"
